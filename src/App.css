@@ -3,3 +3,16 @@
   cursor: pointer;
 }
 
+button,input {
+
+  outline: 0px transparent !important;   /* to remove black border around buttons on click in chrome */
+
+}
+
+
+.dark__mode {
+  height: 100vh;
+  background-color: rgb(46,45,45);
+  color: rgb(202,202,202);
+}
+
