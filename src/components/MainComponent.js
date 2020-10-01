@@ -166,6 +166,8 @@ class MainComponent extends Component{
             <ListComponent contacts={this.state.contacts.reverse()}
               onDeleteContact={this.removeContact}
               openScreen={this.AddContactScreen}
+                toggleMode={this.props.toggleMode}
+                
             />)}
           /> 
 

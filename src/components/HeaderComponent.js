@@ -6,6 +6,7 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import InputBase from '@material-ui/core/InputBase';
 import {Link} from 'react-router-dom'
+import "./Header.css"
 const useStyles =() => ({
   margin: {
     margin:1,
@@ -27,7 +28,7 @@ class HeaderComponent extends Component{
 
    const { classes } = this.props;
  return(
-  <div>
+  <div className="header">
 
 
 
@@ -57,6 +58,14 @@ class HeaderComponent extends Component{
 
         />
       </FormControl>
+
+
+     <div className="mode__change">
+       <label className="switch">
+         <input type="checkbox" onChange={this.props.toggleMode} />
+         <span className="slider round"></span>
+       </label>
+     </div>
     
   </div>
   )

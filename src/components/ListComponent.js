@@ -78,7 +78,8 @@ class ListComponent extends Component {
 
       
          
-          <HeaderComponent query={this.state.query} updateQuery={this.updateQuery}  />
+          <HeaderComponent query={this.state.query} updateQuery={this.updateQuery} 
+          toggleMode={this.props.toggleMode} />
           
           {showingContacts.length !== this.props.contacts.length && (
           <div>
